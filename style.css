@@ -1,7 +1,59 @@
-img {
-  height: 300px;
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+nav {
+  background-color: #1f2937;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  color: white;
+  list-style: none;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: baseline; */
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
 .main-logo {
+  display: flex;
+  align-items: center;
 }
-.nav-items {
+
+.hunter-logo {
+  height: 70px;
+}
+
+.key-visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.kurapika-kv {
+  width: 80%; /* Fits the parent container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.section-one {
+  display: flex;
+  background-color: #1f2937;
+  color: #f4f4f4;
+  padding: 50px 50px;
+  justify-content: space-between;
 }
