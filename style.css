@@ -57,3 +57,37 @@ body {
   padding: 50px 50px;
   justify-content: space-between;
 }
+
+.section-two {
+  display: flex;
+  background-color: #f4f4f4;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 50px;
+}
+
+.all-princes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 10px 10px;
+}
+
+.princes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.PrincesH2 {
+  margin-bottom: 10px;
+}
+.princes-img {
+  border-radius: 15%;
+  border: 3px solid #26518c;
+}
+
+.section-three {
+  background-color: #e5e7eb;
+}
