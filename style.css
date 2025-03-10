@@ -5,18 +5,22 @@
   box-sizing: border-box;
 }
 
+p {
+  font-size: 0.9em;
+}
+
 nav {
-  background-color: #1f2937;
-  padding: 10px 150px;
+  background-color: #f8d52a;
+  padding: 10px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 ul {
-  color: white;
+  color: black;
   list-style: none;
-  width: 400px;
+  width: 350px;
   display: flex;
   justify-content: space-evenly;
   /* align-items: baseline; */
@@ -24,26 +28,37 @@ ul {
 
 /* Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
   margin: 0;
 }
 
-.main-logo {
+.main-logo-nav {
   display: flex;
   align-items: center;
 }
 
-.hunter-logo {
-  height: 70px;
+.lego-logo {
+  height: 60px;
 }
 
-.key-visual {
+.search {
+  background: none; /* Remove inherited background */
+  color: inherit; /* Use default text color */
+  border: none; /* Remove border */
+  padding: 0; /* Reset padding */
+  font-size: inherit; /* Reset font size */
+  cursor: pointer;
+  display: flex;
+  background-color: #f8d52a;
+}
+
+/* .key-visual {
   display: flex;
   justify-content: flex-end;
-}
+} */
 
 .kurapika-kv {
   width: 80%; /* Fits the parent container */
@@ -53,10 +68,20 @@ body {
 
 .section-one {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-color: #1f2937;
   color: #f4f4f4;
   padding: 30px 150px;
-  justify-content: space-between;
+  background-image: url("https://www.lego.com/cdn/cs/set/assets/blt32c688705a3b7cff/Botanicals_Desktop.png?format=webply&fit=crop&quality=60&width=1600&height=700&dpr=2");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  height: 600px;
+}
+
+.main-copies {
+  text-align: right;
 }
 
 .section-two {
@@ -67,37 +92,192 @@ body {
   padding: 25px 150px;
 }
 
-.all-princes {
+.allPopularIcons {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 10px 10px 0px 10px;
 }
 
-.princes {
+.popularIcons {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px 10px;
 }
 
-.PrincesH2 {
-  margin-bottom: 10px;
+.PopularCollection {
+  margin-bottom: 5px;
 }
-.princes-img {
-  border-radius: 15%;
-  border: 3px solid #26518c;
+.icons-img {
+  height: 90px;
 }
 
 .section-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px;
+}
+
+.three-one,
+.three-two,
+.three-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.img-three {
+  width: 400px;
+  margin-bottom: 15px;
+}
+
+.section-four {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.four-one,
+.four-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.img-four {
+  width: 600px;
+  margin-bottom: 15px;
+}
+
+.section-five {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000000;
+  margin: 50px 250px;
+  padding: 30px 150px;
+  background-image: url("https://www.lego.com/cdn/cs/set/assets/blt47e9ae4aeec2086e/City-Home-202201-Hero-Short-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=200&dpr=1.5");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.five-banner {
+  color: #fffcfc;
+  font-weight: bold;
+  background-color: #0c0c0c;
+  padding: 15px 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1em;
+}
+
+.section-six {
+  height: 300px;
   background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.s6h3 {
+  width: 500px;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.s6p {
+  display: flex;
+  width: 500px;
+  margin-top: 20px;
+  justify-content: flex-end;
 }
 
 button {
-  color: #f4f4f4;
-  background-color: #3882f6;
-  padding: 5px 15px;
+  color: #171717;
+  font-weight: bold;
+  background-color: #cdcdcd;
+  padding: 10px 15px;
   margin-top: 10px;
-  border-radius: 8px;
+  border-radius: 25px;
   border-style: none;
+  font-size: 1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1f1d45;
+  color: #e5e7eb;
+  min-height: 40vh;
+  padding: 50px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8em;
+}
+
+.learnMoreS3 {
+  background: none;
+  color: inherit; /* Use default text color */
+  border: none; /* Remove border */
+  font-size: inherit; /* Reset font size */
+  cursor: pointer;
+}
+
+.learnMoreS3:hover {
+  text-decoration: underline;
+}
+
+.search {
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.search-button {
+  background: none; /* Remove inherited background */
+  color: inherit; /* Use default text color */
+  border: none; /* Remove border */
+  margin-top: 0px;
+  padding: 0; /* Reset padding */
+  font-size: inherit; /* Reset font size */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ffffff; */
+}
+
+.search-img {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Keep it proportional */
+  object-fit: contain;
 }
