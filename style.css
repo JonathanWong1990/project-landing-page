@@ -323,8 +323,8 @@ footer {
 
 .search {
   background-color: #ffffff;
-  height: 40px;
-  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   border-radius: 50%;
   justify-content: center;
