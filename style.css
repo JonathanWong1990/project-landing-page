@@ -348,3 +348,8 @@ footer {
   height: 20px;
   object-fit: contain;
 }
+
+.section-zero {
+  display: flex;
+  justify-content: center;
+}
