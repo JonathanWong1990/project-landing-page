@@ -23,10 +23,8 @@ ul {
   width: 350px;
   display: flex;
   justify-content: space-evenly;
-  /* align-items: baseline; */
 }
 
-/* Body Styling */
 body {
   font-family: Verdana, sans-serif;
   line-height: 1.6;
@@ -45,19 +43,19 @@ body {
 }
 
 .search {
-  background: none; /* Remove inherited background */
-  color: inherit; /* Use default text color */
-  border: none; /* Remove border */
-  padding: 0; /* Reset padding */
-  font-size: inherit; /* Reset font size */
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font-size: inherit;
   cursor: pointer;
   display: flex;
   background-color: #f8d52a;
 }
 
 .kurapika-kv {
-  width: 80%; /* Fits the parent container */
-  height: auto; /* Maintains aspect ratio */
+  width: 80%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -76,8 +74,8 @@ body {
 
 @media (max-width: 768px) {
   .section-one {
-    height: auto; /* Content determines height for smaller screens */
-    min-height: 300px; /* Ensure it doesn't shrink too much */
+    height: auto;
+    min-height: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -210,11 +208,7 @@ body {
   background-repeat: no-repeat;
   height: 250px;
   border-radius: 8px;
-  font-size: clamp(
-    0.7rem,
-    2vw,
-    1rem
-  ); /* Dynamic Font Scaling - Min: 0.8rem, Preferred: 2vw, Max: 1.2rem */
+  font-size: clamp(0.7rem, 2vw, 1rem); /* Dynamic Font Scaling */
   margin: 0px;
   padding: 45px;
 }
@@ -317,9 +311,9 @@ footer {
 
 .learnMoreS3 {
   background: none;
-  color: inherit; /* Use default text color */
-  border: none; /* Remove border */
-  font-size: inherit; /* Reset font size */
+  color: inherit;
+  border: none;
+  font-size: inherit;
   cursor: pointer;
 }
 
@@ -337,21 +331,20 @@ footer {
 }
 
 .search-button {
-  background: none; /* Remove inherited background */
-  color: inherit; /* Use default text color */
-  border: none; /* Remove border */
+  background: none;
+  color: inherit;
+  border: none;
   margin-top: 0px;
-  padding: 0; /* Reset padding */
-  font-size: inherit; /* Reset font size */
+  padding: 0;
+  font-size: inherit;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #ffffff; */
 }
 
 .search-img {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Keep it proportional */
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
